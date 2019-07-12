@@ -1,0 +1,39 @@
+version: '3.3'
+
+services:
+  db:
+    image: mysql:5.7
+    volumes:
+      - ./db_data:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: pass
+      MYSQL_DATABASE: xrnl
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: pass
+      MYSQL_RANDOM_ROOT_PASSWORD: pass
+
+  wordpress:
+    depends_on:
+      - db
+    image: wordpress:php7.1
+    ports:
+      - "8000:80"
+    restart: always
+    volumes:
+      - .:/var/www/html
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: admin
+      WORDPRESS_DB_PASSWORD: pass
+      WORDPRESS_DB_NAME: xrnl
+
+  composer:
+    build: .
+    working_dir: /var/www/html
+    restart: 'no'
+    volumes:
+      - .:/var/www/html
+
+volumes:
+    db_data: {}
