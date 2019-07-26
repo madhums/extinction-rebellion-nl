@@ -7,7 +7,10 @@
     docker-compose logs -f # to check the logs
     ```
 - Visit `localhost:8000`
-- Install `wpml` plugin (This should be installed by composer before sync-db happens)
+- Install these commercial plugins (ask someone)
+  - `wpml`
+  - `acfml`
+  - `advanced-custom-fields-pro-5.7.10`
 - Login and sync the database using `wp-sync-db` plugin
   - Make sure to add `extinction-rebellion-nl.daan-mac` => `localhost:8000`
 
