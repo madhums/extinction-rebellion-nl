@@ -94,14 +94,17 @@ get_header(); ?>
         <h2><?php _e('FAQ AND PRACTICAL INFO', 'theme-xrnl'); ?></h2>
         <?php the_field('rwb_faq_description') ?>
         <div class="row my-3">
-          <ul class="list-unstyled">
-            <?php while ( have_rows('faq') ){ the_row(); ?>
-              <li>
-                <strong><?php the_sub_field('faq_question'); ?></strong>
-                <p><?php the_sub_field('faq_answer'); ?></p>
-              </li>
+          <div class="text-left col-lg-10 col-xl-8 mx-auto">
+            <?php while ( have_rows('rwb_faqs') ){ the_row(); ?>
+              <div class="my-3">
+                <a class="btn btn-yellow btn-lg btn-block d-flex justify-content-between align-content-center" data-toggle="collapse" href="#faq-<?php echo get_row_index(); ?>" role="button" aria-expanded="false" aria-controls="faq-<?php echo get_row_index(); ?>">
+                  <span><?php the_sub_field('question'); ?></span>
+                  <i class="fas fa-chevron-down pt-1"></i>
+                </a>
+                <p class="collapse" id="faq-<?php echo get_row_index(); ?>"><?php the_sub_field('answer'); ?></p>
+              </div>
             <?php } ?>
-          </ul>
+          </div>
         </div>
       </div>
     </div>
