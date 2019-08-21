@@ -42,12 +42,15 @@ get_header(); ?>
   </div>
 
   <div class="bg-pink">
+    <a name="join"></a>
     <div class="container">
       <div class="row py-5 text-center">
         <div class="col-12 col-lg-8 mx-auto">
           <h2><?php _e('JOIN REBEL WITHOUT BORDERS', 'theme-xrnl'); ?></h2>
           <?php the_field('rwb_join_description'); ?>
-          <?php the_field('rwb_signup_code'); ?>
+        </div>
+        <div class="col-12 col-lg-6 col-md-8 mx-auto mt-4">
+          <?php the_field('sign_up_form_code'); ?>
         </div>
       </div>
     </div>
@@ -61,12 +64,10 @@ get_header(); ?>
         </h2>
         <p><?php the_field('rwb_why_protest'); ?></p>
       </div>
-      <div class="col-12 col-lg-6 mx-auto">
-        <a class="btn btn-outline btn-yellow" data-toggle="collapse" href="#demands" role="button" aria-expanded="false" aria-controls="demands">
-          <h4 class="font-xr text-uppercase mt-3">
-            <?php _e('OUR DEMANDS', 'theme-xrnl'); ?>
-            <i class="fas fa-chevron-down"></i>
-          </h4>
+      <div class="col-12 col-lg-6 mx-auto mt-3">
+        <a class="btn btn-yellow btn-lg" data-toggle="collapse" href="#demands" role="button" aria-expanded="false" aria-controls="demands">
+          <?php _e('OUR DEMANDS', 'theme-xrnl'); ?>
+          <i class="fas fa-chevron-down"></i>
         </a>
         <div class="text-left collapse" id="demands">
           <?php the_field('rwb_demands'); ?>
@@ -96,14 +97,32 @@ get_header(); ?>
         <div class="row my-3">
           <div class="text-left col-lg-10 col-xl-8 mx-auto">
             <?php while ( have_rows('rwb_faqs') ){ the_row(); ?>
-              <div class="my-3">
-                <a class="btn btn-yellow btn-lg btn-block d-flex justify-content-between align-content-center" data-toggle="collapse" href="#faq-<?php echo get_row_index(); ?>" role="button" aria-expanded="false" aria-controls="faq-<?php echo get_row_index(); ?>">
+              <div class="my-3 border border-yellow">
+                <a class="btn btn-yellow btn-lg btn-block d-flex justify-content-between align-content-center text-left" data-toggle="collapse" href="#faq-<?php echo get_row_index(); ?>" role="button" aria-expanded="false" aria-controls="faq-<?php echo get_row_index(); ?>">
                   <span><?php the_sub_field('question'); ?></span>
                   <i class="fas fa-chevron-down pt-1"></i>
                 </a>
-                <p class="collapse" id="faq-<?php echo get_row_index(); ?>"><?php the_sub_field('answer'); ?></p>
+                <div class="collapse" id="faq-<?php echo get_row_index(); ?>">
+                  <div class="p-4"><?php the_sub_field('answer'); ?></div>
+                </div>
               </div>
             <?php } ?>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-blue">
+    <div class="container">
+      <div class="row py-5 text-center">
+        <div class="col-12 col-lg-8 mx-auto">
+          <h2><?php _e('JOIN REBEL WITHOUT BORDERS', 'theme-xrnl'); ?></h2>
+          <?php the_field('rwb_join_description'); ?>
+          <div class="mt-3">
+            <a href="#join" class="btn btn-black btn-lg">
+              <?php _e('JOIN') ?> <i class="fas fa-chevron-up"></i>
+            </a>
           </div>
         </div>
       </div>

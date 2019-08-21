@@ -1,9 +1,9 @@
 {
-    "key": "group_5d593b7d50cda",
+    "key": "group_5d5d1b4122894",
     "title": "RWB",
     "fields": [
         {
-            "key": "field_5d593ba4fa886",
+            "key": "field_5d5d1b4130e25",
             "label": "RWB Caption",
             "name": "rwb_caption",
             "type": "text",
@@ -23,7 +23,7 @@
             "maxlength": 50
         },
         {
-            "key": "field_5d594654fa887",
+            "key": "field_5d5d1b4130f2b",
             "label": "RWB Date",
             "name": "rwb_date",
             "type": "text",
@@ -43,7 +43,7 @@
             "maxlength": ""
         },
         {
-            "key": "field_5d594730fa888",
+            "key": "field_5d5d1b413104c",
             "label": "RWB Location",
             "name": "rwb_location",
             "type": "text",
@@ -63,7 +63,7 @@
             "maxlength": ""
         },
         {
-            "key": "field_5d594764fa889",
+            "key": "field_5d5d1b4131152",
             "label": "RWB Cover Image URL",
             "name": "rwb_cover_image_url",
             "type": "url",
@@ -80,7 +80,7 @@
             "placeholder": ""
         },
         {
-            "key": "field_5d594833fa88a",
+            "key": "field_5d5d1b413125a",
             "label": "RWB Facebook Event URL",
             "name": "rwb_facebook_event_url",
             "type": "url",
@@ -97,7 +97,7 @@
             "wpml_cf_preferences": 0
         },
         {
-            "key": "field_5d59484ffa88b",
+            "key": "field_5d5d1b4131364",
             "label": "RWB Meetup Event URL",
             "name": "rwb_meetup_event_url",
             "type": "text",
@@ -117,7 +117,7 @@
             "maxlength": ""
         },
         {
-            "key": "field_5d595a4031423",
+            "key": "field_5d5d1b413146c",
             "label": "RWB Join Description",
             "name": "rwb_join_description",
             "type": "textarea",
@@ -137,7 +137,7 @@
             "wpml_cf_preferences": 2
         },
         {
-            "key": "field_5d595ac731424",
+            "key": "field_5d5d1b4131574",
             "label": "RWB Why protest",
             "name": "rwb_why_protest",
             "type": "textarea",
@@ -157,7 +157,7 @@
             "wpml_cf_preferences": 2
         },
         {
-            "key": "field_5d595b7231425",
+            "key": "field_5d5d1b4131696",
             "label": "RWB Demands",
             "name": "rwb_demands",
             "type": "wysiwyg",
@@ -177,7 +177,7 @@
             "wpml_cf_preferences": 2
         },
         {
-            "key": "field_5d595c0531426",
+            "key": "field_5d5d1b4131796",
             "label": "RWB Who is XR",
             "name": "rwb_who_is_xr",
             "type": "textarea",
@@ -197,7 +197,7 @@
             "wpml_cf_preferences": 2
         },
         {
-            "key": "field_5d595c3f31427",
+            "key": "field_5d5d1b4131896",
             "label": "RWB FAQ Description",
             "name": "rwb_faq_description",
             "type": "textarea",
@@ -217,7 +217,7 @@
             "wpml_cf_preferences": 2
         },
         {
-            "key": "field_5d5bf96cc29d9",
+            "key": "field_5d5d1b41319a9",
             "label": "RWB FAQ's",
             "name": "rwb_faqs",
             "type": "repeater",
@@ -237,7 +237,7 @@
             "wpml_cf_preferences": 2,
             "sub_fields": [
                 {
-                    "key": "field_5d5bfa1fc29da",
+                    "key": "field_5d5d1b4157249",
                     "label": "Question",
                     "name": "question",
                     "type": "text",
@@ -257,7 +257,7 @@
                     "maxlength": ""
                 },
                 {
-                    "key": "field_5d5bfa35c29db",
+                    "key": "field_5d5d1b415739c",
                     "label": "Answer",
                     "name": "answer",
                     "type": "textarea",
@@ -279,7 +279,7 @@
             ]
         },
         {
-            "key": "field_5d5d183789c26",
+            "key": "field_5d5d1b4131acc",
             "label": "Sign up form code",
             "name": "sign_up_form_code",
             "type": "wysiwyg",
@@ -316,5 +316,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1566382499
+    "modified": 1566382942
 }
